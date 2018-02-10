@@ -3,7 +3,7 @@
     <meta charset="utf-8">
     <title>Ville Verte service</title>
     <!-- Link Swiper's CSS -->
-	    <meta name="viewport" content="width=device-width, initial-scale=0.5, minimum-scale=0.5, maximum-scale=0.5">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 	 <!--<link href="https://fonts.googleapis.com/css?family=Ruluko" rel="stylesheet">-->
 	<!--<link rel="stylesheet" type="text/css" href="//www.fontstatic.com/f=jazeera-light" />-->
 <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
@@ -213,7 +213,8 @@ document.location.href='home.html';
 
 function testo()
 {  
-window.localStorage.removeItem("validation");  localStorage.clear();
+$('body').hide();
+//window.localStorage.removeItem("validation");  localStorage.clear();
 if (localStorage.getItem('validation') == null) {
 $('body').show();
 return false;

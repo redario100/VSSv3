@@ -187,6 +187,7 @@ function hideall()
 {
 $('#pilo').hide();
 $('#pilo2').hide();
+$('#pilo').removeClass('bghyn2');
 setTimeout(function(){ 
 $('.backgrn').hide();
  document.getElementById("valqt").value = '1';
@@ -215,7 +216,7 @@ var client=localStorage.getItem('email');
 $.ajax({
          data: "lepanier=ok&panier="+panier+"&client="+client,
          type: "post",
-         url:  "http://villeverteapp.com/app/http://villeverteapp.com/app/userinsertmob.php",
+         url:  "http://villeverteapp.com/app/userinsertmob.php",
 		
     beforeSend: function()
     {
@@ -314,7 +315,7 @@ $("#countpanier5").html(k);
 $.ajax({
          data: "ajouteraupanier=ok&idclientp="+ab+"&codepanier="+codepanier+"&idproduct="+a+"&valqt="+b+"&finalo="+res,
          type: "post",
-         url:  "http://villeverteapp.com/app/http://villeverteapp.com/app/userinsertmob.php",
+         url:  "http://villeverteapp.com/app/userinsertmob.php",
 		
     beforeSend: function()
     {
@@ -345,7 +346,7 @@ var client=localStorage.getItem('email');
 $.ajax({
          data: "loadpanier=ok&panier="+panier+"&client="+client,
          type: "post",
-         url:  "http://villeverteapp.com/app/http://villeverteapp.com/app/userinsertmob.php",
+         url:  "http://villeverteapp.com/app/userinsertmob.php",
 		
     beforeSend: function()
     {
@@ -388,7 +389,7 @@ var h=$("#vivo").val();
 $.ajax({
          data: "supppanier="+h,
          type: "post",
-         url:  "http://villeverteapp.com/app/http://villeverteapp.com/app/userinsertmob.php",
+         url:  "http://villeverteapp.com/app/userinsertmob.php",
 		
     beforeSend: function()
     {
@@ -476,7 +477,7 @@ var demande = $( "#demande" ).val();
 $.ajax({
          data: "ajouteraupanier2=ok&idclientp="+ab+"&codepanier="+codepanier+"&demande="+demande,
          type: "post",
-         url:  "http://villeverteapp.com/app/http://villeverteapp.com/app/userinsertmob.php",
+         url:  "http://villeverteapp.com/app/userinsertmob.php",
 		
     beforeSend: function()
     {
@@ -519,7 +520,7 @@ var client=localStorage.getItem('email');
 $.ajax({
          data: "jecommande=ok&total="+a+"&livraison="+b+"&client="+client+"&panier="+panier,
          type: "post",
-         url:  "http://villeverteapp.com/app/http://villeverteapp.com/app/userinsertmob.php",
+         url:  "http://villeverteapp.com/app/userinsertmob.php",
 		
     beforeSend: function()
     {
@@ -632,7 +633,7 @@ Modification Réussie !
 </div>
 
 <div class="pano3">
-Votre Commande a été envoyé, vous allez recevoir une réponse dans quelques instant!
+<img width="70px" style="float:left;margin-right:10px;" src="stopwatch.png">Votre Commande a été envoyée, vous allez recevoir une réponse dans quelques instants!
 <div style="margin-top:23px;" onclick="$('.pano1').hide();$('.pano3').hide();" class="buttonx">Ok</div>
 </div>
 <div onclick="hideall()" class="backgrn"></div>
@@ -694,7 +695,7 @@ Votre Commande a été envoyé, vous allez recevoir une réponse dans quelques i
    </div> 
 	<div style='padding:10px 0px !important;' data-position="fixed" data-role="header">
 	<a href="#left-panel" data-theme="d" data-iconpos="notext" data-shadow="false" class="hidebg" data-iconshadow="false"><img class="imgbt" src="menu.png"></a>
-		<h1 style="font-family: 'Kaushan Script', cursive !important;font-size:23px;padding:0.35em 0 !important;">Ville Verte APP</h1>
+		<h1 style="font-family: 'Kaushan Script', cursive !important;font-size:23px;padding:0.35em 0 !important;">Ville Verte</h1>
 			<a href="#lepanier" onclick="affichepanier()" data-transition="slide" data-theme="d" data-iconpos="notext" data-shadow="false" class="hidebg" data-iconshadow="false"><div id="countpanier1" class="countpanier">0</div><img class="imgbt" src="buy.png"></a>
 	</div><!-- /header -->
 <!--data-dom-cache="true"-->
@@ -711,7 +712,7 @@ Votre Commande a été envoyé, vous allez recevoir une réponse dans quelques i
 
 	<div  style='padding:10px 0px !important;' data-position="fixed" data-role="header">
 	<a data-transition="slide" data-direction="reverse" href="#page1" data-theme="d"  data-iconpos="notext" data-shadow="false" class="hidebg" data-iconshadow="false"><img class="imgbt" style="vertical-align: middle;width: 24px !important;color: white;margin-top: 7px !important;" src="retour.png"> <span style="font-size: 16px;color: white;vertical-align:-5px;">Retour</span></a>
-	<h1 style="font-family: 'Kaushan Script', cursive !important;font-size:23px;padding:0.35em 0 !important;">Ville Verte APP</h1>
+	<h1 style="font-family: 'Kaushan Script', cursive !important;font-size:23px;padding:0.35em 0 !important;">Ville Verte</h1>
 	<a href="#lepanier" onclick="affichepanier()" data-transition="slide" data-theme="d" data-iconpos="notext" data-shadow="false" class="hidebg" data-iconshadow="false"><div id="countpanier2" class="countpanier">0</div><img class="imgbt" src="buy.png"></a>
 	
 	</div><!-- /header -->
@@ -727,7 +728,7 @@ Votre Commande a été envoyé, vous allez recevoir une réponse dans quelques i
 
 	<div  style='padding:10px 0px !important;' data-position="fixed" data-role="header">
 	<a data-transition="slide" data-direction="reverse" href="#page2" data-theme="d"  data-iconpos="notext" data-shadow="false" class="hidebg" data-iconshadow="false"><img class="imgbt" style="vertical-align: middle;width: 24px !important;color: white;margin-top: 7px !important;" src="retour.png"> <span style="font-size: 16px;color: white;vertical-align:-5px;">Retour</span></a>
-	<h1 style="font-family: 'Kaushan Script', cursive !important;font-size:23px;padding:0.35em 0 !important;">Ville Verte APP</h1>
+	<h1 style="font-family: 'Kaushan Script', cursive !important;font-size:23px;padding:0.35em 0 !important;">Ville Verte</h1>
 	<a href="#lepanier" onclick="affichepanier()" data-transition="slide" data-theme="d" data-iconpos="notext" data-shadow="false" class="hidebg" data-iconshadow="false"><div id="countpanier222" class="countpanier">0</div><img class="imgbt" src="buy.png"></a>
 	
 	</div><!-- /header -->
@@ -743,7 +744,7 @@ Votre Commande a été envoyé, vous allez recevoir une réponse dans quelques i
 
 	<div  style='padding:10px 0px !important;' data-position="fixed" data-role="header">
 		<a data-transition="slide" data-direction="reverse" href="#page1" data-theme="d"  data-iconpos="notext" data-shadow="false" class="hidebg" data-iconshadow="false"><img class="imgbt" style="vertical-align: middle;width: 24px !important;color: white;margin-top: 7px !important;" src="retour.png"> <span style="font-size: 16px;color: white;vertical-align:-5px;">Retour</span></a>
-			<h1 style="font-family: 'Kaushan Script', cursive !important;font-size:23px;padding:0.35em 0 !important;">Ville Verte APP</h1>
+			<h1 style="font-family: 'Kaushan Script', cursive !important;font-size:23px;padding:0.35em 0 !important;">Ville Verte</h1>
 	</div><!-- /header -->
 
 
@@ -761,7 +762,7 @@ Votre Commande a été envoyé, vous allez recevoir une réponse dans quelques i
 
 	<div  style='padding:10px 0px !important;' data-position="fixed" data-role="header">
 		<a data-transition="slide" data-direction="reverse" href="#page1" data-theme="d"  data-iconpos="notext" data-shadow="false" class="hidebg" data-iconshadow="false"><img class="imgbt" style="vertical-align: middle;width: 24px !important;color: white;margin-top: 7px !important;" src="retour.png"> <span style="font-size: 16px;color: white;vertical-align:-5px;">Retour</span></a>
-			<h1 style="font-family: 'Kaushan Script', cursive !important;font-size:23px;padding:0.35em 0 !important;">Ville Verte APP</h1>
+			<h1 style="font-family: 'Kaushan Script', cursive !important;font-size:23px;padding:0.35em 0 !important;">Ville Verte</h1>
 			<a href="#lepanier" onclick="affichepanier()" data-transition="slide" data-theme="d" data-iconpos="notext" data-shadow="false" class="hidebg" data-iconshadow="false"><img class="imgbt" src="buy.png"></a>
 	
 	</div><!-- /header -->
@@ -787,7 +788,7 @@ Les prix figurant dans le site sont des prix TTC en Dh. Nos partenaires se rése
 <div data-role="page" style="background-color:white;" id="apropos">
 	<div  style='padding:10px 0px !important;' data-position="fixed" data-role="header">
 		<a data-transition="slide" data-direction="reverse" href="#page1" data-theme="d"  data-iconpos="notext" data-shadow="false" class="hidebg" data-iconshadow="false"><img class="imgbt" style="vertical-align: middle;width: 24px !important;color: white;margin-top: 7px !important;" src="retour.png"> <span style="font-size: 16px;color: white;vertical-align:-5px;">Retour</span></a>
-			<h1 style="font-family: 'Kaushan Script', cursive !important;font-size:23px;padding:0.35em 0 !important;">Ville Verte APP</h1>
+			<h1 style="font-family: 'Kaushan Script', cursive !important;font-size:23px;padding:0.35em 0 !important;">Ville Verte</h1>
 			<a href="#lepanier" onclick="affichepanier()" data-transition="slide" data-theme="d" data-iconpos="notext" data-shadow="false" class="hidebg" data-iconshadow="false"><img class="imgbt" src="buy.png"></a>
 	
 	</div><!-- /header -->
@@ -812,7 +813,7 @@ Notre mission est d’être la principale infrastructure de la demande pour tout
 <div data-role="page" style="background-color:white;" id="nouveautes">
 	<div  style='padding:10px 0px !important;' data-position="fixed" data-role="header">
 		<a data-transition="slide" data-direction="reverse" href="#page1" data-theme="d"  data-iconpos="notext" data-shadow="false" class="hidebg" data-iconshadow="false"><img class="imgbt" style="vertical-align: middle;width: 24px !important;color: white;margin-top: 7px !important;" src="retour.png"> <span style="font-size: 16px;color: white;vertical-align:-5px;">Retour</span></a>
-			<h1 style="font-family: 'Kaushan Script', cursive !important;font-size:23px;padding:0.35em 0 !important;">Ville Verte APP</h1>
+			<h1 style="font-family: 'Kaushan Script', cursive !important;font-size:23px;padding:0.35em 0 !important;">Ville Verte</h1>
 			<a href="#lepanier" onclick="affichepanier()" data-transition="slide" data-theme="d" data-iconpos="notext" data-shadow="false" class="hidebg" data-iconshadow="false"><div id="countpanier4" class="countpanier">0</div><img class="imgbt" src="buy.png"></a>
 	
 	</div><!-- /header -->
@@ -834,7 +835,7 @@ Notre mission est d’être la principale infrastructure de la demande pour tout
 <div data-role="page" style="background-color:white;" id="details">
 	<div  style='padding:10px 0px !important;' data-position="fixed" data-role="header">
 		<a data-transition="slide" data-direction="reverse" href="#page1" data-theme="d"  data-iconpos="notext" data-shadow="false" class="hidebg" data-iconshadow="false"><img class="imgbt" style="vertical-align: middle;width: 24px !important;color: white;margin-top: 7px !important;" src="retour.png"> <span style="font-size: 16px;color: white;vertical-align:-5px;">Retour</span></a>
-			<h1 style="font-family: 'Kaushan Script', cursive !important;font-size:23px;padding:0.35em 0 !important;">Ville Verte APP</h1>
+			<h1 style="font-family: 'Kaushan Script', cursive !important;font-size:23px;padding:0.35em 0 !important;">Ville Verte</h1>
 			<a href="#lepanier" onclick="affichepanier()" data-transition="slide" data-theme="d" data-iconpos="notext" data-shadow="false" class="hidebg" data-iconshadow="false"><div id="countpanier5" class="countpanier">0</div><img class="imgbt" src="buy.png"></a>
 	
 	</div><!-- /header -->
@@ -855,7 +856,7 @@ Notre mission est d’être la principale infrastructure de la demande pour tout
 
 	<div  style='padding:10px 0px !important;' data-position="fixed" data-role="header">
 		<a data-transition="slide" data-direction="reverse" href="#page1" data-theme="d"  data-iconpos="notext" data-shadow="false" class="hidebg" data-iconshadow="false"><img class="imgbt" style="vertical-align: middle;width: 24px !important;color: white;margin-top: 7px !important;" src="retour.png"> <span style="font-size: 16px;color: white;vertical-align:-5px;">Retour</span></a>
-			<h1 style="font-family: 'Kaushan Script', cursive !important;font-size:23px;padding:0.35em 0 !important;">Ville Verte APP</h1>
+			<h1 style="font-family: 'Kaushan Script', cursive !important;font-size:23px;padding:0.35em 0 !important;">Ville Verte</h1>
 	</div><!-- /header -->
 
 	<div id="contentpage6" style="text-align:left;font-family:'Exo 2', sans-serif !important" data-dom-cache="true" data-role="content">
@@ -893,7 +894,7 @@ Notre mission est d’être la principale infrastructure de la demande pour tout
 
 	<div  style='padding:10px 0px !important;' data-position="fixed" data-role="header">
 		<a data-transition="slide" data-direction="reverse" href="#page1" data-theme="d"  data-iconpos="notext" data-shadow="false" class="hidebg" data-iconshadow="false"><img class="imgbt" style="vertical-align: middle;width: 24px !important;color: white;margin-top: 7px !important;" src="retour.png"> <span style="font-size: 16px;color: white;vertical-align:-5px;">Retour</span></a>
-			<h1 style="font-family: 'Kaushan Script', cursive !important;font-size:23px;padding:0.35em 0 !important;">Ville Verte APP</h1>
+			<h1 style="font-family: 'Kaushan Script', cursive !important;font-size:23px;padding:0.35em 0 !important;">Ville Verte</h1>
 			<a href="#lepanier" onclick="affichepanier()" data-transition="slide" data-theme="d" data-iconpos="notext" data-shadow="false" class="hidebg ui-link ui-btn-right ui-btn ui-btn-d ui-corner-all" data-iconshadow="false" data-role="button" role="button"><div id="countpanier3" class="countpanier">0</div><img class="imgbt" src="buy.png"></a>
 	</div><!-- /header -->
 
@@ -910,7 +911,7 @@ Notre mission est d’être la principale infrastructure de la demande pour tout
 
 	<div  style='padding:10px 0px !important;' data-position="fixed" data-role="header">
 		<a data-transition="slide" data-direction="reverse" href="#page1" data-theme="d"  data-iconpos="notext" data-shadow="false" class="hidebg" data-iconshadow="false"><img class="imgbt" style="vertical-align: middle;width: 24px !important;color: white;margin-top: 7px !important;" src="retour.png"> <span style="font-size: 16px;color: white;vertical-align:-5px;">Retour</span></a>
-			<h1 style="font-family: 'Kaushan Script', cursive !important;font-size:23px;padding:0.35em 0 !important;">Ville Verte APP</h1>
+			<h1 style="font-family: 'Kaushan Script', cursive !important;font-size:23px;padding:0.35em 0 !important;">Ville Verte</h1>
 			<a href="#lepanier" onclick="affichepanier()" data-transition="slide" data-theme="d" data-iconpos="notext" data-shadow="false" class="hidebg ui-link ui-btn-right ui-btn ui-btn-d ui-corner-all" data-iconshadow="false" data-role="button" role="button"><div id="countpanier3" class="countpanier">0</div><img class="imgbt" src="buy.png"></a>
 	</div><!-- /header -->
 
